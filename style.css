@@ -22,6 +22,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  box-sizing: border-box;
 }
 
 .body {
@@ -62,7 +63,7 @@
 }
 
 .sidebar {
-  overflow: overlay;
+  overflow-y: auto;
   scrollbar-width: none;
 }
 
@@ -136,7 +137,7 @@
   display: grid;
   padding-top: 19px;
   height: 80%;
-  overflow: overlay;
+  overflow-y: auto;
 }
 
 .friend-list {
@@ -214,7 +215,7 @@
   background-color: var(--hover-color);
 }
 .chat-content {
-  overflow: overlay;
+  overflow-y: auto;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -247,7 +248,6 @@ span .message {
 }
 
 .outgoing .message {
-  /* order: 1; */
   background-color: rgb(130, 13, 176);
 }
 .outgoing .pfp {
